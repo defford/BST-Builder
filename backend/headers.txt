@@ -1,0 +1,16 @@
+HTTP/2 200 
+date: Sun, 10 Aug 2025 18:40:44 GMT
+content-type: application/zip
+content-length: 14652
+cf-ray: 96d19f95c9daac8e-YYZ
+content-disposition: attachment; filename="bstdb.zip"
+strict-transport-security: max-age=15552000; includeSubDomains
+last-modified: Sun, 10 Aug 2025 18:40:44 GMT
+cf-cache-status: MISS
+expires: Sun, 10 Aug 2025 19:40:44 GMT
+cache-control: public, max-age=3600
+accept-ranges: bytes
+set-cookie: __cf_bm=Zq3G6Hs34W0uzm4g4mC4lE2O42LdgutV_xooszCCHyw-1754851244-1.0.1.1-2M6NK7S4_WQWNoqhWZHk_SqSGez8Eob4r9n4j.vt.Lxj83lTFfQ8ff_Cj4xVwTRS42EtilvWmXYuOUt3BASEVUgmO7EGBPODW2PoKwHKm2A; path=/; expires=Sun, 10-Aug-25 19:10:44 GMT; domain=.spring.io; HttpOnly; Secure; SameSite=None
+server: cloudflare
+alt-svc: h3=":443"; ma=86400
+

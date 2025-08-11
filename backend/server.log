@@ -1,0 +1,75 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.4)
+
+2025-08-10T16:28:51.394-02:30  INFO 29313 --- [bstdb] [           main] com.example.bstdb.BstdbApplication       : Starting BstdbApplication using Java 23.0.1 with PID 29313 (/Users/danielefford/Documents/SD12/04-DSA/Final Sprint/backend/target/classes started by danielefford in /Users/danielefford/Documents/SD12/04-DSA/Final Sprint/backend)
+2025-08-10T16:28:51.396-02:30  INFO 29313 --- [bstdb] [           main] com.example.bstdb.BstdbApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-08-10T16:28:51.716-02:30  INFO 29313 --- [bstdb] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-10T16:28:51.744-02:30  INFO 29313 --- [bstdb] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 1 JPA repository interface.
+2025-08-10T16:28:52.012-02:30  INFO 29313 --- [bstdb] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-10T16:28:52.020-02:30  INFO 29313 --- [bstdb] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-10T16:28:52.020-02:30  INFO 29313 --- [bstdb] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-10T16:28:52.054-02:30  INFO 29313 --- [bstdb] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-10T16:28:52.054-02:30  INFO 29313 --- [bstdb] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 626 ms
+2025-08-10T16:28:52.216-02:30  INFO 29313 --- [bstdb] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-10T16:28:52.236-02:30  INFO 29313 --- [bstdb] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-10T16:28:52.250-02:30  INFO 29313 --- [bstdb] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-10T16:28:52.383-02:30  INFO 29313 --- [bstdb] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-10T16:28:52.396-02:30  INFO 29313 --- [bstdb] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-10T16:28:52.510-02:30  INFO 29313 --- [bstdb] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/bstdb user=SA
+2025-08-10T16:28:52.511-02:30  INFO 29313 --- [bstdb] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-10T16:28:52.544-02:30  INFO 29313 --- [bstdb] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-10T16:28:52.922-02:30  INFO 29313 --- [bstdb] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-10T16:28:52.946-02:30  INFO 29313 --- [bstdb] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-10T16:28:53.064-02:30  WARN 29313 --- [bstdb] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-10T16:28:53.174-02:30  INFO 29313 --- [bstdb] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/bstdb'
+2025-08-10T16:28:53.232-02:30  INFO 29313 --- [bstdb] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-08-10T16:28:53.236-02:30  INFO 29313 --- [bstdb] [           main] com.example.bstdb.BstdbApplication       : Started BstdbApplication in 2.059 seconds (process running for 2.236)
+2025-08-10T16:29:08.374-02:30  INFO 29313 --- [bstdb] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-10T16:29:08.374-02:30  INFO 29313 --- [bstdb] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-10T16:29:08.375-02:30  INFO 29313 --- [bstdb] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-10T17:19:57.972-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m5s17ms).
+2025-08-10T17:21:38.950-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s973ms).
+2025-08-10T17:37:37.451-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m28s485ms).
+2025-08-10T17:53:37.758-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m30s180ms).
+2025-08-10T18:10:03.923-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m56s166ms).
+2025-08-10T18:45:37.039-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m32s953ms).
+2025-08-10T18:53:23.971-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m46s910ms).
+2025-08-10T19:20:34.847-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m10s750ms).
+2025-08-10T19:26:34.087-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m29s182ms).
+2025-08-10T20:22:46.225-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m41s531ms).
+2025-08-10T21:14:05.616-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m18s958ms).
+2025-08-10T21:26:04.579-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m28s949ms).
+2025-08-10T21:28:09.386-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m4s808ms).
+2025-08-10T22:58:11.444-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m31s529ms).
+2025-08-11T00:57:01.753-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h58m50s312ms).
+2025-08-11T01:58:18.342-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h46s540ms).
+2025-08-11T02:58:53.284-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h34s942ms).
+2025-08-11T03:59:43.714-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h50s430ms).
+2025-08-11T06:01:39.039-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h1m25s305ms).
+2025-08-11T07:02:51.800-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h42s771ms).
+2025-08-11T07:45:19.986-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=42m28s187ms).
+2025-08-11T08:03:33.728-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m13s743ms).
+2025-08-11T09:04:39.321-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m5s593ms).
+2025-08-11T09:05:29.235-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49s906ms).
+2025-08-11T09:25:16.878-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m47s576ms).
+2025-08-11T09:39:51.905-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m34s953ms).
+2025-08-11T09:51:13.332-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m21s389ms).
+2025-08-11T10:01:52.626-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m9s270ms).
+2025-08-11T10:57:42.997-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=28m20s208ms).
+2025-08-11T11:11:34.890-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m51s851ms).
+2025-08-11T11:13:19.745-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m44s854ms).
+2025-08-11T11:54:38.929-02:30  WARN 29313 --- [bstdb] [l-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m19s25ms).
