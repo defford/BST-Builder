@@ -35,6 +35,11 @@ cd backend
 ```bash
 cd frontend
 npm install
+npm run --silent env 1>/dev/null 2>&1 || true
+# Create your local env file (or edit manually)
+cp -n .env.example .env.local 2>/dev/null || cp .env.example .env.local
+# Ensure VITE_API_BASE_URL points at your backend (default below)
+# VITE_API_BASE_URL=http://localhost:8080
 npm run dev
 ```
 
@@ -116,8 +121,19 @@ curl "http://localhost:8080/api/previous-trees?limit=25"
 
 ## Frontend configuration
 
-- The frontend reads `VITE_API_BASE_URL` from environment files like `.env.local`.
-- Update it to point to your backend (e.g., `http://localhost:8080`).
+- **Env variable**: The client uses `VITE_API_BASE_URL` to reach the backend.
+- **Where to set it**: Create `frontend/.env.local` (not committed) based on `frontend/.env.example`.
+- **Value**: During local dev, set it to your Spring Boot URL (default `http://localhost:8080`).
+
+Example `frontend/.env.local`:
+```dotenv
+VITE_API_BASE_URL=http://localhost:8080
+```
+
+Notes on Vite env files:
+- Files are loaded by mode and precedence: `.env`, `.env.local`, `.env.development`, `.env.production`, etc. Local variants (`.env.local`) are ignored by git.
+- Only variables prefixed with `VITE_` are exposed to the client.
+- To use a different backend URL temporarily, you can export it inline: `VITE_API_BASE_URL=http://localhost:8081 npm run dev`.
 
 ## CORS
 
@@ -133,5 +149,6 @@ curl "http://localhost:8080/api/previous-trees?limit=25"
 - Verify Java 21 and Node 18+ are installed and on PATH.
 - Ensure `VITE_API_BASE_URL` is correctly set in `frontend/.env.local`.
 - Backend logs output to console; check `backend/server.log` if configured.
+- If the frontend shows network errors (e.g., `Failed to fetch`), confirm the backend is running on `8080` or update `VITE_API_BASE_URL` accordingly.
 
 
