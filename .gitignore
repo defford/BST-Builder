@@ -1,0 +1,9 @@
+.DS_Store
+backend/target/
+**/*.log
+backend/data/*.mv.db
+backend/data/*.trace.db
+frontend/node_modules/
+frontend/dist/
+*.env
+*.env.*.local
