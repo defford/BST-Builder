@@ -28,7 +28,7 @@ export default function PreviousTreesPage() {
   return (
     <div style={{ maxWidth: 1000, margin: '0 auto', padding: 16 }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 12 }}>
-        <h1 style={{ margin: 0 }}>All Trees</h1>
+        <h2 style={{ margin: 0 }}>All Trees</h2>
         <nav style={{ display: 'flex', gap: 12 }}>
           <Link to="/enter-numbers">Enter Numbers</Link>
         </nav>

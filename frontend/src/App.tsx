@@ -43,6 +43,7 @@ function App() {
         <div className="toolbar">
           <input
             value={numbers}
+            style={{ color: 'black' }}
             onChange={(e) => setNumbers(e.target.value)}
             placeholder="Enter numbers e.g. 7, 3 10 1 5"
             type="text"
